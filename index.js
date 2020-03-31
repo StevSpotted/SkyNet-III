@@ -16,6 +16,9 @@ bot.on('message', async (msg) => {
 
     msg.channel.send(cmd)
   }
+
+
+  if(message.content === "ping") return message.channel.send("Pong !")
 })
 
 bot.login(config.token);
