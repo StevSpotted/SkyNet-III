@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client({DisableEveryone: true});
-const config = require('./config.js');
+//const config = require('./config.js');
 
 
 bot.on('ready', async () => {
@@ -16,8 +16,10 @@ bot.on('message', async (msg) => {
 
     let command = commands.getCommand(cmd);
     if(command) command.run(bot, msg, args);
+
+
   }
 
-})
+});
 
 bot.login(config.token);
