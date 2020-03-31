@@ -6,13 +6,13 @@ let user;
 
   let hEmbed = new Discord.MessageEmbed()
   .setColor('5DF510')
-  .setThumbnail(user.avatarURL)
+  //.setThumbnail(user.avatarURL)
   .setTitle(`Pannel d'aide`)
   .setDescription('Ici vous trouverez toutes les commandes disponibles !')
   .addField(`*administration`, `Vous donneras l'accès au commandes administrateurs`)
   .addField(`*modération`, `Vous donneras l'accès au commandes modérateurs`)
   .addField(`En dev`, 'En dev..')
-  .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
+  //.setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
   .setTimestamp();
   msg.channel.send(hEmbed);
 }
