@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const config = require("./config.js");
+const prefix = "*";
 
 
 bot.on('ready', async () => {
