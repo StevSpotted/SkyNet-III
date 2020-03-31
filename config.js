@@ -1,6 +1,6 @@
-const config = {
-  prefix: "*",
-  token: process.env.BOT_TOKEN
-};
+//const config = {
+  //prefix: "*",
+  //token: process.env.BOT_TOKEN
+//};
 
-module.exports = config;
+//module.exports = config;
