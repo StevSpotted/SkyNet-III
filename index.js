@@ -14,12 +14,10 @@ bot.on('message', async (msg) => {
     cmd = cmdArray[0]
     args = cmdarray.slice(1)
 
-    msg.channel.send(cmd)
+    let command = commands.getCommand(cmd);
+    if(command) command.run(bot, msg, args);
   }
 
-
-  if(msg.content === "ping"){
-    return message.channel.send("Pong !") };
 })
 
 bot.login(config.token);
