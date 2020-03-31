@@ -1,0 +1,14 @@
+{
+  "name": "SkyNet-III",
+  "version": "1.0.0",
+  "description": "A discord bot",
+  "main": "index.js",
+  "repository": "https://github.com/Victorien01/SkyNet-III",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.1.1"
+  }
+}
