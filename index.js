@@ -15,7 +15,7 @@ bot.on('message', async (msg) => {
     let cmd = cmdArray[0]
     let args = cmdArray.slice(1)
 
-    let commands = commands.getCommand(cmd);
+    let command = commands.getCommand(cmd);
     if(command) command.run(bot, msg, args);
 
     if(cmd == 'help'){
