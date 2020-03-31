@@ -11,6 +11,7 @@ module.exports.run = async (bot, msg, args) => {
   .addField('En dev..', 'En dev..')
   .setFooter('Support serveur : ')
   .setTimestamp();
+  msg.channel.send(hEmbed);
 };
 
 module.exports.help = {
