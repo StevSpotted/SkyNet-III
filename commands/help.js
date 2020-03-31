@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-
+const prefix = "*"
 module.exports.run = async (bot, msg, args) => {
 
   let hEmbed = new Discord.MessageEmbed()
