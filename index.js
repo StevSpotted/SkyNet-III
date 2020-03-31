@@ -18,7 +18,8 @@ bot.on('message', async (msg) => {
   }
 
 
-  if(message.content === "ping") return message.channel.send("Pong !")
+  if(msg.content === "ping"){
+    return message.channel.send("Pong !") };
 })
 
 bot.login(config.token);
