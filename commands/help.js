@@ -14,7 +14,7 @@ let message = author.username;
   .addField(`*administration`, `Vous donneras l'accès au commandes administrateurs`)
   .addField(`*modération`, `Vous donneras l'accès au commandes modérateurs`)
   .addField(`En dev`, '[En dev..](https://google.com)')
-  .setFooter(`Replying to ${message.author.username}`)
+  //.setFooter(`Replying to ${message.author.username}`)
   .setTimestamp();
   msg.channel.send(hEmbed);
 }
