@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 
-module.expotrs.run = async (bot, msg, args) => {
+module.exports.run = async (bot, msg, args) => {
 
   if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(`Vous n'avez pas les droit`);
   if(!args[0]) return message.channel.send(`Merci d'indiquer du texte`);
