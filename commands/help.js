@@ -12,7 +12,7 @@ module.exports.run = async (bot, msg, args) => {
   .setDescription('Ici vous trouverez toutes les commandes disponibles !')
   .addField(`*administration`, `Vous donneras l'accès au commandes administrateurs`)
   .addField(`*modération`, `Vous donneras l'accès au commandes modérateurs`)
-  .addField(`En dev`, '[En dev..](https://google.com)')
+  .addField(`Support server`, '[REJOINDRE](https://discordapp.com/invite/t2tqR3b)')
   //.setFooter(`Replying to ${message.author.username}`)
   .setTimestamp();
   msg.channel.send(hEmbed);
