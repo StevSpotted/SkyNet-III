@@ -21,7 +21,7 @@ module.exports.run = async (bot, msg, args) => {
     .addFields(
       { name: 'Auteur du kick:', value: msg.author},
       { name: 'Membre kick:', value: member},
-      { name: 'Raison:', value: **reason**}
+      { name: 'Raison:', value: reason}
     );
     msg.channel.send(hEmbed);
 }
