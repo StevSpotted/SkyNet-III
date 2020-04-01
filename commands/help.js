@@ -3,7 +3,6 @@ module.exports.run = async (bot, msg, args) => {
 
 
 let user = message.guild.member;
-let message = author.username;
 
 
   let hEmbed = new Discord.MessageEmbed()
