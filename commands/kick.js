@@ -5,7 +5,7 @@ module.exports.run = async (bot, msg, args) => {
 
     if(!msg.member.hasPermission("KICK_MEMBERS")) return msg.channel.send("Vous n'avez pas le droit de kick.");
     if(!msg.guild.me.hasPermission("KICK_MEMBERS")) return msg.channel.send("Je n'ai pas les permissions");
-    if(args.length < 2) return msg.channel.send("Donnez moi une raison");
+    if(args.length < 2) return msg.channel.send("Indiquez moi qui et pourquoi le kic");
     const member = msg.mentions.members.first();
     let reason = '';
     for(let i = 1; i < args.length; i++){
