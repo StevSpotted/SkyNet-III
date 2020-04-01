@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 module.exports.run = async (bot, msg, args) => {
 
 
-let user = message.guild.member;
+let user;
 
 
   let hEmbed = new Discord.MessageEmbed()
