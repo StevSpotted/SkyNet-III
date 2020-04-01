@@ -2,7 +2,9 @@ const Discord = require('discord.js');
 module.exports.run = async (bot, msg, args) => {
 
 
-let user;
+let user = message.guild.member;
+let message = message.author.username;
+
 
   let hEmbed = new Discord.MessageEmbed()
   .setColor('5DF510')
