@@ -12,7 +12,8 @@ module.exports.run = async (bot, msg, args) => {
   .setDescription('Ici vous trouverez toutes les commandes disponibles !')
   .addField(`*administration`, `Vous donneras l'accès au commandes administrateurs`)
   .addField(`*modération`, `Vous donneras l'accès au commandes modérateurs`)
-  .addField(`Support server`, '[REJOINDRE](https://discordapp.com/invite/t2tqR3b)')
+  .addField(`**Ici se situera la boutique du serveur`, `[Allez à la boutique]En cours`)
+  .addField(`Support server`, '[Rejoindre ce magnifique serveur](https://discordapp.com/invite/t2tqR3b)')
   //.setFooter(`Replying to ${message.author.username}`)
   .setTimestamp();
   msg.channel.send(hEmbed);
