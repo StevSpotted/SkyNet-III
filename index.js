@@ -19,19 +19,34 @@ bot.on('message', async (msg) => {
     let command = commands.getCommand(cmd);
     if(command) command.run(bot, msg, args);
   }
-
+// Bonjour
 if(msg.content.startsWith('Bonjour') && msg.mentions.users.first() == bot.user) {
-  const awnser = [`bonjour ${msg.author}`, "Bonjour", "T ki?", "Bonjour comment tu-vas ?"];
+  const awnser = [`bonjour ${msg.author}`, "Bonjour", "Bonjour , tu fait quoi ?", "Bonjour comment tu-vas ?"];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 
 };
-
+// Comment ça va ? BIEN
 if(msg.content.startsWith('Bien et toi') && msg.mentions.users.first() == bot.user) {
   const awnser = [`Moi ça va plutôt bien`, "Vraiment parfait", "Au plus mal", "ça ne te regarde pas"];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
-
+};
+// Comment ça va ? MAL
+if(msg.content.startsWith('Mal et toi') && msg.mentions.users.first() == bot.user) {
+  const awnser = [`Raconte moi tout ..`, "C'est bien dommage", "Mange ça fait du bien..", ""];
+  msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 };
 
+// Que fait tu ? RIEN
+if(msg.content.startsWith('Rien et toi') && msg.mentions.users.first() == bot.user) {
+  const awnser = [`Franchement rien du tout.`, "J'attends du beau monde.", "Je te parle.", "rien"];
+  msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
+};
+
+// Que fait tu ? RANDOM
+if(msg.content === ('et toi') && msg.mentions.users.first() == bot.user) {
+  const awnser = [`ça m'a l'air fort intérressant`, "Franchement tu veut que je te dises un truc, j'm'en fiche", "Me raconte pas ta vie :joy:", "Ouais ouais"];
+  msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
+};
 
 });
 
