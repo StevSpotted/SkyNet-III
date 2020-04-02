@@ -2,16 +2,16 @@ const Discord = require('discord.js');
 
 
 module.exports.run = async (bot, msg, args) => {
-  message.delete();
+  msg.delete();
 
-  if(!message.member.hasPermission('MANAGE_MESSAGES')) {
+  if(!msg.member.hasPermission('MANAGE_MESSAGES')) {
     return message.reply(`Vous n'avez pas les droits !`).then(msg => msg.delete(5000))
   };
   if(isNaN(args[0]) || parseInt(args[0]) <= 0) {
-    return message.reply(`Veuillez spécifier un nombre de messages correct.`).then(msg => msg.delete(5000))
+    return msg.reply(`Veuillez spécifier un nombre de messages correct.`).then(msg => msg.delete(5000))
   };
-  if(!message.guild.me.hasPermission('MANAGE_MESSAGES')) {
-    message.reply(`Je n'ai pas les droits.`).then(msg => msg.delete(5000))
+  if(!msg.guild.me.hasPermission('MANAGE_MESSAGES')) {
+    msg.reply(`Je n'ai pas les droits.`).then(msg => msg.delete(5000))
   };
 
    let deleteAmount;
@@ -21,9 +21,9 @@ module.exports.run = async (bot, msg, args) => {
      deleteAmount = parseInt(args[0]);
    }
 
-message.channel.bulkDelete(deleteAmount, true)
-  .then(deleted => message.channel.send(`${deleted.size} messages supprimés.`)).then(msg => msg.delete(5000))
-  .catch(err => message.reply(`Il y a une erreur... ${err}`));
+msg.channel.bulkDelete(deleteAmount, true)
+  .then(deleted => msg.channel.send(`${deleted.size} messages supprimés.`)).then(msg => msg.delete(5000))
+  .catch(err => msg.reply(`Il y a une erreur... ${err}`));
 
 }
 module.exports.help = {
