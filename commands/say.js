@@ -8,6 +8,7 @@ module.exports.run = async (bot, msg, args) => {
  }
 
   let botmsg = args.join(" ");
+  if(args[0]) return msg.channel.send(`Veuillez indiquer du texte`)
   msg.delete().catch();
   msg.channel.send(botmsg)
 };
