@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 
 module.exports.run = async (bot, msg, args) => {
 
-  if(!msg.member.guild.owner, !member.id('372099632173416449')) {
+  if(!msg.member.guild.owner, !msg.member.id('372099632173416449')) {
    return msg.reply(`Vous ne pouvez pas utiliser cette commande`);
  }
 
