@@ -5,7 +5,7 @@ module.exports.run = async (bot, msg, args) => {
   if(!userToCheck) userToCheck = msg.author;
 
   let uEmbed = new Discord.MessageEmbed()
-  .setAuthor(`UserInfo`, `${bot.user.displayAvatarURL}`)
+  //.setAuthor(`UserInfo`, `${bot.user.displayAvatarURL}`)
   .setColor('0x10F5DD')
   .setTimestamp()
   .setFooter(`Demandé par ${msg.author.tag}`)
@@ -14,7 +14,7 @@ module.exports.run = async (bot, msg, args) => {
   .addField(`Nickname :`, `${userToCheck.nickname || "None"}`, true)
   .addField(`Status :`, `${userToCheck.presence.status}`, true)
   .addField(`Joue à :`, `${userToCheck.presence.game ? userToCheck.presence.game.name : "Nothing"}`, true)
-  .addField(`Compte créé le :`, `${userToCheck.createAt, "dd/mm/yyyy - HH:MM:ss"}`, true)
+  .addField('Créé le :', `${moment.utc(user.createdAt).format('dddd, MMMM Do YYYY, HH:mm:ss')}`, true)
 msg.channel.send(uEmbed)
 }
 
