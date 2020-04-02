@@ -19,7 +19,7 @@ bot.on('message', async (msg) => {
     if(command) command.run(bot, msg, args);
   }
 
-if(msg.content.includes(msg.guild.me)) {
+if(msg.startsWith('Bonjour') && msg.mentions.users.first() == bot.user) {
   const awnser = [`bonjour ${msg.author}`, "Bonjour", "T ki?"];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 
