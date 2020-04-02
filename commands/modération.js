@@ -3,7 +3,7 @@ module.exports.run = async (bot, msg, args) => {
 
 
 //let user;
-if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply(`Petit malin tu n'a pas les permission`)
+if(!msg.member.hasPermission('MANAGE_MESSAGES')) return msg.reply(`Petit malin tu n'a pas les permission`)
 
   let mEmbed = new Discord.MessageEmbed()
   .setColor('5DF510')
