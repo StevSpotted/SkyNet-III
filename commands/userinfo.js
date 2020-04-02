@@ -14,7 +14,7 @@ module.exports.run = async (bot, msg, args) => {
   .addField(`Nickname :`, `${userToCheck.nickname || "None"}`, true)
   .addField(`Status :`, `${userToCheck.presence.status}`, true)
   .addField(`Joue à :`, `${userToCheck.presence.game ? userToCheck.presence.game.name : "Nothing"}`, true)
-  .addField(`Compte créé le :`, `${dateFormat(userToCheck.createAt, "dd/mm/yyyy - HH:MM:ss")}`, true)
+  .addField(`Compte créé le :`, `${userToCheck.createAt, "dd/mm/yyyy - HH:MM:ss"}`, true)
 msg.chanel.send(uEmbed)
 }
 
