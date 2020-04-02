@@ -8,13 +8,13 @@ module.exports.run = async (bot, msg, args) => {
  }
 
 
-  if(!args[0]) return msg.channel.send(`Veuillez indiquer du texte`) {
+  if(!args[0]) return msg.channel.send(`Veuillez indiquer du texte`)
 
 
     let botmsg = args.join(" ");
   msg.delete().catch();
   msg.channel.send(botmsg)
-}
+
 };
 module.exports.help = {
   name: "say"
