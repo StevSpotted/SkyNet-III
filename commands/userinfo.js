@@ -1,4 +1,5 @@
 const Discord = require('discord.js')
+const moment = require('moment')
 
 module.exports.run = async (bot, msg, args) => {
   let userToCheck = msg.mentions.users.first();
