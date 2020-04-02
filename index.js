@@ -22,4 +22,12 @@ bot.on('message', async (msg) => {
 
 });
 
+
+bot.on('message' async (msg) => {
+  if(msg.content.startsWith('Bonjour')) {
+    const awnser = ["Salut", "Bonjour", "T ki?"];
+    msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
+  }
+})
+
 bot.login(process.env.BOT_TOKEN);
