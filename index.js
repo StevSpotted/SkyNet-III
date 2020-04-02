@@ -43,7 +43,7 @@ if(msg.content.startsWith('Rien et toi') && msg.mentions.users.first() == bot.us
 };
 
 // Que fait tu ? RANDOM
-if(msg.content === ('et toi') && msg.mentions.users.first() == bot.user) {
+if(msg.content.includes('et toi') && msg.mentions.users.first() == bot.user) {
   const awnser = [`ça m'a l'air fort intérressant`, "Franchement tu veut que je te dises un truc, j'm'en fiche", "Me raconte pas ta vie :joy:", "Ouais ouais"];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 };
