@@ -17,7 +17,7 @@ bot.on('message', async (msg) => {
 
     let command = commands.getCommand(cmd);
     if(command) command.run(bot, msg, args);
-
+  }
 
     if(msg.content.startsWith('Bonjour')) {
       const awnser = ["Salut", "Bonjour", "T ki?"];
@@ -25,7 +25,7 @@ bot.on('message', async (msg) => {
     }
 
 
-});
+};
 
 
 
