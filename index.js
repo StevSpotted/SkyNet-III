@@ -20,10 +20,17 @@ bot.on('message', async (msg) => {
   }
 
 if(msg.content.startsWith('Bonjour') && msg.mentions.users.first() == bot.user) {
-  const awnser = [`bonjour ${msg.author}`, "Bonjour", "T ki?"];
+  const awnser = [`bonjour ${msg.author}`, "Bonjour", "T ki?", "Bonjour comment tu-vas ?"];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 
 };
+
+if(msg.content.startsWith('Bien et toi') && msg.mentions.users.first() == bot.user) {
+  const awnser = [`Moi ça va plutôt bien`, "Vraiment parfait", "Au plus mal", "ça ne te regarde pas"];
+  msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
+
+};
+
 
 });
 
