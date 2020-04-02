@@ -5,13 +5,13 @@ module.exports.run = async (bot, msg, args) => {
   msg.delete();
 
   if(!msg.member.hasPermission('MANAGE_MESSAGES')) {
-    return msg.reply(`Vous n'avez pas les droits !`).then(msg => msg.delete(5000))
+    return msg.reply(`Vous n'avez pas les droits !`)
   };
   if(isNaN(args[0]) || parseInt(args[0]) <= 0) {
-    return msg.reply(`Veuillez spécifier un nombre de messages correct.`).then(msg => msg.delete(5000))
+    return msg.reply(`Veuillez spécifier un nombre de messages correct.`)
   };
   if(!msg.guild.me.hasPermission('MANAGE_MESSAGES')) {
-    msg.reply(`Je n'ai pas les droits.`).then(msg => msg.delete(5000))
+    msg.reply(`Je n'ai pas les droits.`)
   };
 
    let deleteAmount;
@@ -22,7 +22,7 @@ module.exports.run = async (bot, msg, args) => {
    }
 
 msg.channel.bulkDelete(deleteAmount, true)
-  .then(deleted => msg.channel.send(`${deleted.size} messages supprimés.`)).then(msg => msg.delete(5000))
+  .then(deleted => msg.channel.send(`${deleted.size} messages supprimés.`))
 
 };
 module.exports.help = {
