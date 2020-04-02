@@ -26,18 +26,18 @@ if(msg.content.startsWith('Bonjour') && msg.mentions.users.first() == bot.user) 
 
 };
 // Comment ça va ? BIEN
-if(msg.content.toLowerCase().startsWith('Bien et toi') && msg.mentions.users.first() == bot.user) {
+if(msg.content.startsWith('Bien et toi') && msg.mentions.users.first() == bot.user) {
   const awnser = [`Moi ça va plutôt bien`, "Vraiment parfait", "Au plus mal", "ça ne te regarde pas"];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 };
 // Comment ça va ? MAL
-if(msg.content.toLowerCase().startsWith('Mal et toi') && msg.mentions.users.first() == bot.user) {
+if(msg.content.startsWith('Mal et toi') && msg.mentions.users.first() == bot.user) {
   const awnser = [`Raconte moi tout ..`, "C'est bien dommage", "Mange ça fait du bien..", ""];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 };
 
 // Que fait tu ? RIEN
-if(msg.content.toLowerCase().startsWith('Rien et toi') && msg.mentions.users.first() == bot.user) {
+if(msg.content.startsWith('Rien et toi') && msg.mentions.users.first() == bot.user) {
   const awnser = [`Franchement rien du tout.`, "J'attends du beau monde.", "Je te parle.", "rien"];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 };
