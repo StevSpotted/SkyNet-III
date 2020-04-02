@@ -12,5 +12,5 @@ module.exports.run = async (bot, msg, args) => {
   message.channel.send(botmessage)
 };
 module.exports.help = {
-  name: "clear"
+  name: "say"
 }
