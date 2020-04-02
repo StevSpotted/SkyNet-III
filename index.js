@@ -19,7 +19,7 @@ bot.on('message', async (msg) => {
     if(command) command.run(bot, msg, args);
   }
 
-    if(msg.content.startsWith('Bonjour @SkyNet#7751 ')) {
+    if(msg.content.startsWith(`Bonjour @SkyNet`)) {
       const awnser = [`bonjour ${msg.author}`, "Bonjour", "T ki?"];
       msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
     }
