@@ -19,10 +19,10 @@ bot.on('message', async (msg) => {
     if(command) command.run(bot, msg, args);
   }
 
-    if(msg.content.startsWith(`Bonjour ${bot.mentions}`)) {
+
       const awnser = [`bonjour ${msg.author}`, "Bonjour", "T ki?"];
       msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
-    }
+    
 
 
 });
