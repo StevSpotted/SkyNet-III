@@ -5,7 +5,7 @@ module.exports.run = async (bot, msg, args) => {
   msg.delete();
 
   if(!msg.member.hasPermission('MANAGE_MESSAGES')) {
-    return message.reply(`Vous n'avez pas les droits !`).then(msg => msg.delete(5000))
+    return msg.reply(`Vous n'avez pas les droits !`).then(msg => msg.delete(5000))
   };
   if(isNaN(args[0]) || parseInt(args[0]) <= 0) {
     return msg.reply(`Veuillez spécifier un nombre de messages correct.`).then(msg => msg.delete(5000))
