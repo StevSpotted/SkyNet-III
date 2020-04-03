@@ -9,7 +9,7 @@ if(!msg.mentions.users.first) { return msg.channel.send("Veuillez spécifier une
 let mention = msg.mentions.users.first();
 mentionMessage = msg.content.slice (29);
 if(mentionMessage === 'undefined') { return msg.channel.send("Veuillez spécifier un message")}
-mention.sendMsg(mentionMessage);
+mention.sendMessage(mentionMessage);
 msg.reply("message envoyé");
 
 
