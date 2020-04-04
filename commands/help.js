@@ -14,7 +14,7 @@ let user;
   .addField(`*modération`, `Vous donneras l'accès au commandes modérateurs`)
   .addField(`**Ici se situera la boutique du serveur`, `[Allez à la boutique]En cours`)
   .addField(`Support server`, '[Rejoindre ce magnifique serveur](https://discordapp.com/invite/t2tqR3b)')
-  .setFooter(`Replying to ${message.author.username}`)
+  .setFooter(`Replying to ${msg.author.username}`)
   .setTimestamp();
   msg.channel.send(hEmbed);
 }
