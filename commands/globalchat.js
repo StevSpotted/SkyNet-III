@@ -10,7 +10,7 @@ module.exports.run = async (bot, msg, args) => {
   }
     msg.guild.channels.create('global-chat').then(channel => {
       channel.setTopic('Global chat')
-      message.channel.send("Et voilà Global-Chat créé en haut de votre serveur")
+      msg.channel.send("Et voilà Global-Chat créé en haut de votre serveur")
 });
 if(msg.channel.name === "global-chat"){
 		if(!msg.author.bot){
