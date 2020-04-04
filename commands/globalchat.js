@@ -8,7 +8,9 @@ module.exports.run = async (bot, msg, args) => {
   if(!msg.guild.me.hasPermission('ADMINISTRATOR')) {
     return msg.reply("Désolé je n'ai pas les permissions administrateur")
   }
-  msg.guild.createChannel("global-chat")
+    msg.guild.channels.create('global-chat').then(channel => {
+      channel.setTopic('Global chat')
+});
 
 
 
