@@ -24,7 +24,7 @@ bot.on('message', async (msg) => {
   if(msg.channel.name === "global-chat"){
   		if(!msg.author.bot){
   			let args = msg.content.slice().split(" ");
-        let guild;
+        
 
   		const sayMessage = args.join(" ");
   			msg.delete().catch();
