@@ -24,11 +24,12 @@ bot.on('message', async (msg) => {
   if(msg.channel.name === "global-chat"){
   		if(!msg.author.bot){
   			let args = msg.content.slice().split(" ");
-        
+
 
   		const sayMessage = args.join(" ");
   			msg.delete().catch();
   			let gEmbed = new Discord.MessageEmbed()
+
 
   			.setAuthor(`${msg.author.username} | ${msg.author.id}`, msg.author.avatarURL())
   			.setColor(0xBCFF78)
@@ -36,7 +37,7 @@ bot.on('message', async (msg) => {
   			.setFooter(`Envoyé depuis ${msg.guild.name}`)
   			.setTimestamp()
 
-  			msg.guild.channels.cache.find(channel => channel.name === 'global-chat')
+  			msg.guild.channels.cache.find(channel => channel.name === 'global-chat').send(gEmbed)
   		}
 
 
