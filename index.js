@@ -29,7 +29,7 @@ bot.on('message', async (msg) => {
   			msg.delete().catch();
   			let gEmbed = new Discord.MessageEmbed()
 
-  			.setAuthor(`${msg.author.username} | ${msg.author.id}`, msg.author.avatarURL)
+  			.setAuthor(`${msg.author.username} | ${msg.author.id}`, msg.author.avatarURL())
   			.setColor(0xBCFF78)
   			.addField(`${sayMessage}`, "Global Chat V.1")
   			.setFooter(`Envoyé depuis ${msg.guild.name}`)
