@@ -37,7 +37,9 @@ bot.on('message', async (msg) => {
   			.setFooter(`Envoyé depuis ${msg.guild.name}`)
   			.setTimestamp()
 
-  			msg.guild.channels.cache.find(channel => channel.name === 'global-chat').send(gEmbed)
+        for(let i = 0; i < bot.guilds.length; i++){
+  bot.guilds[i].channels.cache.find(channel => channel.name === 'general-chat').send(gEmbed)
+}
   		}
 
 
