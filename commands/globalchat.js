@@ -12,25 +12,6 @@ module.exports.run = async (bot, msg, args) => {
       channel.setTopic('Global chat')
       msg.channel.send("Et voilà Global-Chat créé en haut de votre serveur")
 });
-if(msg.channel.name === "global-chat"){
-		if(!msg.author.bot){
-			let args = msg.content.slice().split(" ");
-
-		const sayMessage = args.join(" ");
-			msg.delete().catch();
-			let gEmbed = new Discord.MessageEmbed()
-
-			.setAuthor(`${msg.author.username} | ${msg.author.id}`, msg.author.avatarURL)
-			.setColor(0xBCFF78)
-			.addField(`${sayMessage}`, "Global Chat V.1")
-			.setFooter(`Envoyé depuis ${msg.guild.name}`)
-			.setTimestamp()
-
-			bot.channels.findAll('name', 'global-chat').map(channel => channel.send(gEmbed))
-		}
-
-
-	}
 
 
 
