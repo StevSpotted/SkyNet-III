@@ -38,7 +38,7 @@ bot.on('message', async (msg) => {
               .setTimestamp()
 
 
-  let channelanno = bot.guilds.textChannels.cache.find(channel => channel.name === 'global-chat');
+  let channelanno = bot.guilds.textChannels.find(channel => channel.name === 'global-chat');
     if(channelanno){
       channelanno.send(gEmbed)
 }
