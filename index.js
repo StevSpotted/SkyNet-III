@@ -38,7 +38,7 @@ bot.on('message', async (msg) => {
   			.setTimestamp()
 
 
-  bot.guilds.channels.cache(channel => channel.name === 'global-chat').send(gEmbed)
+  bot.guilds.channels.cache.get(channel => channel.name === 'general-chat').send(gEmbed)
 
   		}
 
