@@ -23,7 +23,7 @@ bot.on('message', async (msg) => {
 
 
 
-// GLOBAL CHAT CODE , SENDING MESSAGES
+// GLOBAL CHAT CODE , SENDING MESSAGES //////////////////////////////////////////////////////////////////////////////////////////
   if(msg.channel.name === "global-chat"){
           if(!msg.author.bot){
               let args = msg.content.slice().split(" ");
@@ -48,6 +48,7 @@ bot.on('message', async (msg) => {
 
   }
 }
+// //////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -59,25 +60,26 @@ bot.on('message', async (msg) => {
 
 
 
+// bonjour //////////////////////////////////////////////////////////////////////////////////////////
 
-// bonjour
+var msg = message.content.toLowerCase();
 if(msg.content.startsWith('Bonjour') && msg.mentions.users.first() == bot.user) {
   const awnser = [`Bonjour ${msg.author}`, "Bonjour", "Bonjour , tu fait quoi ?", "Bonjour comment tu-vas ?"];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 
 };
-// Comment ça va ? BIEN
+// Comment ça va ? BIEN //////////////////////////////////////////////////////////////////////////////////////////
 if(msg.content.startsWith('Bien et toi') && msg.mentions.users.first() == bot.user) {
   const awnser = [`Moi ça va plutôt bien`, "Vraiment parfait", "Au plus mal", "ça ne te regarde pas"];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 };
-// Comment ça va ? MAL
+// Comment ça va ? MAL //////////////////////////////////////////////////////////////////////////////////////////
 if(msg.content.startsWith('Mal et toi') && msg.mentions.users.first() == bot.user) {
   const awnser = [`Raconte moi tout ..`, "C'est bien dommage", "Mange ça fait du bien..", ""];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 };
 
-// Que fait tu ? RIEN
+// Que fait tu ? RIEN //////////////////////////////////////////////////////////////////////////////////////////
 if(msg.content.startsWith('Rien et toi') && msg.mentions.users.first() == bot.user) {
   const awnser = [`Franchement rien du tout.`, "J'attends du beau monde.", "Je te parle.", "rien"];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
