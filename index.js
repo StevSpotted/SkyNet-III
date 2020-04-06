@@ -62,7 +62,6 @@ bot.on('message', async (msg) => {
 
 // bonjour //////////////////////////////////////////////////////////////////////////////////////////
 
-var msg = msg.content.toLowerCase();
 if(msg.content.startsWith('Bonjour') && msg.mentions.users.first() == bot.user) {
   const awnser = [`Bonjour ${msg.author}`, "Bonjour", "Bonjour , tu fait quoi ?", "Bonjour comment tu-vas ?"];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
