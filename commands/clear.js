@@ -22,7 +22,7 @@ module.exports.run = async (bot, msg, args) => {
    }
 
 msg.channel.bulkDelete(deleteAmount, true)
-  .then(deleted => msg.channel.send(`${deleted.size} messages supprimés.`)).msg.delete({ timeout: 5000, reason: 'It had to be done.' })
+  .then(deleted => msg.channel.send(`${deleted.size} messages supprimés.`))msg.delete({ timeout: 5000, reason: 'It had to be done.' })
 
 };
 module.exports.help = {
