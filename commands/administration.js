@@ -7,7 +7,7 @@ if(!msg.member.hasPermission('MANAGE_SERVER')) return msg.reply(`Petit malin tu 
 
   let aEmbed = new Discord.MessageEmbed()
   .setColor('5DF510')
-  .setThumbnail(user.avatarURL())
+  .setThumbnail(msg.author.avatarURL())
   .setTitle(`**Pannel d'administration**`)
   .setDescription(`Commande d'administration disponible`)
   .addField(`*say`, `Permet de faire parler le bot`)
