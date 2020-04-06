@@ -22,30 +22,30 @@ bot.on('message', async (msg) => {
 
 
   if(msg.channel.name === "global-chat"){
-           if(!msg.author.bot){
-               let args = msg.content.slice().split(" ");
+          if(!msg.author.bot){
+              let args = msg.content.slice().split(" ");
 
 
-           const sayMessage = args.join(" ");
-               msg.delete().catch();
-               const gEmbed = new Discord.MessageEmbed()
+          const sayMessage = args.join(" ");
+              msg.delete().catch();
+              const gEmbed = new Discord.MessageEmbed()
 
 
-               .setAuthor(`${msg.author.username} | ${msg.author.id}`, msg.author.avatarURL())
-               .setColor(0xBCFF78)
-               .addField(`${sayMessage}`, "Global Chat V.1")
-               .setFooter(`Envoyé depuis ${msg.guild.name}`)
-               .setTimestamp()
+              .setAuthor(`${msg.author.username} | ${msg.author.id}`, msg.author.avatarURL())
+              .setColor(0xBCFF78)
+              .addField(`${sayMessage}`, "Global Chat V.1")
+              .setFooter(`Envoyé depuis ${msg.guild.name}`)
+              .setTimestamp()
+      msg.channel.send(gEmbed);
 
+  const TestChan = bot.channels.cache.find(channel => channel.name === 'global-chat');
+  if(TestChan){
+    TestChan.send(gEmbed)
+  }
 
-   const TestChan = bot.channels.cache.find(channel => channel.name === 'global-chat');
-   if(TestChan){
-     TestChan.send(gEmbed)
-   }
+}
 
- }
-
-           }
+          
 
 
 
