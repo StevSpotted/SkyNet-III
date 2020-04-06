@@ -41,11 +41,12 @@ bot.on('message', async (msg) => {
   const TestChan = bot.channels.cache.find(channel => channel.name === 'global-chat');
   if(TestChan){
     TestChan.send(gEmbed)
-  }
+    }
 
+  }
 }
 
-          
+
 
 
 
