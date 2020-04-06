@@ -7,7 +7,7 @@ let user;
 
   let hEmbed = new Discord.MessageEmbed()
   .setColor('5DF510')
-  .setThumbnail(bot.user.avatarURL())
+  .setThumbnail(msg.author.avatarURL())
   .setTitle(`Pannel d'aide`)
   .setDescription('Ici vous trouverez toutes les commandes disponibles !')
   .addField(`*administration`, `Vous donneras l'accès au commandes administrateurs`)
