@@ -7,7 +7,7 @@ if(!msg.member.hasPermission('MANAGE_MESSAGES')) return msg.reply(`Petit malin t
 
   let mEmbed = new Discord.MessageEmbed()
   .setColor('5DF510')
-  .setThumbnail(msg.author.avatarURL)
+  .setThumbnail(msg.author.avatarURL())
   .setTitle(`**Pannel de modération**`)
   .setDescription('Commandes de modération')
   .addField(`*clear`, `Permet de nettoyer le chat`)
