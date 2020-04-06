@@ -21,6 +21,9 @@ bot.on('message', async (msg) => {
   }
 
 
+
+
+// GLOBAL CHAT CODE , SENDING MESSAGES
   if(msg.channel.name === "global-chat"){
           if(!msg.author.bot){
               let args = msg.content.slice().split(" ");
@@ -57,9 +60,9 @@ bot.on('message', async (msg) => {
 
 
 
-// Bonjour
-if(msg.content.startsWith('Bonjour') && msg.mentions.users.first() == bot.user) {
-  const awnser = [`bonjour ${msg.author}`, "Bonjour", "Bonjour , tu fait quoi ?", "Bonjour comment tu-vas ?"];
+// bonjour
+if(msg.content.startsWith.toLowerCase('Bonjour') && msg.mentions.users.first() == bot.user) {
+  const awnser = [`Bonjour ${msg.author}`, "Bonjour", "Bonjour , tu fait quoi ?", "Bonjour comment tu-vas ?"];
   msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 
 };
