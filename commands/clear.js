@@ -8,7 +8,7 @@ module.exports.run = async (bot, msg, args) => {
     return msg.reply(`Vous n'avez pas les droits !`)
   };
   if(isNaN(args[0]) || parseInt(args[0]) <= 0) {
-    return msg.reply(`Veuillez spécifier un nombre de messages correct.`).msg.delete({ timeout: 5000, reason: 'It had to be done.' })
+    return msg.reply(`Veuillez spécifier un nombre de messages correct.`)
   };
   if(!msg.guild.me.hasPermission('MANAGE_MESSAGES')) {
     msg.reply(`Je n'ai pas les droits.`)
