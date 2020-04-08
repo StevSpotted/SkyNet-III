@@ -13,6 +13,7 @@ msg.delete();
  .addField(`Cette énigme comportera plusieurs problème`)
  .addField( `Et d'ailleurs le premier problème c'est **주문**`, `Òui moi non plus j'ai pas trop compris mais il ma dit que ça avait du sens`)
  .setFooter(`Je vous recontacterai si j'ai du nouveau`)
+ msg.channel.send(eEmbed)
 }
 module.exports.help = {
   name: "énigme"
