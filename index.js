@@ -98,7 +98,7 @@ if((msg.content === ('*Update')) || (msg.content === ('*update'))) {
     .setDescription(`Bien joué à toi tu as trouvé`)
     .addField(`Pour la deuxième énigme, il m'a dit []`, `A toi de voir si tu veut si tu dit ta trouvaille aux autres ou pas`)
     .setFooter(`Je te recontacterai si besoin j'ai`)
-    msg.channel.send(dEmbed)
+    channel.send(dEmbed)
   })
 
 }
