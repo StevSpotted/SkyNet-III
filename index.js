@@ -89,6 +89,22 @@ if(msg.content.startsWith('Rien et toi') && msg.mentions.users.first() == bot.us
   //msg.channel.send(awnser[Math.floor(Math.random() * awnser.length)]);
 //};
 
+// Update d'évenement ///////////////////////////////////////////////////////////////////////////////////////////
+
+if(msg.content === ('*Update')) || (msg.content === ('*update')) {
+  msg.author.createDM().then(channel => {
+    let dEmbed = new Discord.MessageEmbed()
+    .setTitle('Première énigme')
+    .setDescription(`Bien joué à toi tu as trouvé`)
+    .addField(`Pour la deuxième énigme, il m'a dit []`, `A toi de voir si tu veut si tu dit ta trouvaille aux autres ou pas`)
+    .setFooter(`Je te recontacterai si besoin j'ai`)
+    msg.channel.send(dEmbed)
+  })
+
+}
+
+
+
 });
 
 
