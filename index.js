@@ -107,15 +107,12 @@ if((msg.content === ('*Update')) || (msg.content === ('*update'))) {
 if((msg.content === ('*Pastebin')) || (msg.content === ('*pastebin'))) {
   msg.delete()
   msg.author.createDM().then(channel =>{
-    channel.send('JsXHYwcG')
-      .then(() => msg.react('🇵'))
-      .then(() => msg.react('🇦'))
-      .then(() => msg.react('🇸'))
-      .then(() => msg.react('🇹'))
-      .then(() => msg.react('🇪'))
-      .then(() => msg.react('🇧'))
-      .then(() => msg.react('🇮'))
-      msg.react('🇳')
+let pEmbed = new Discord.MessageEmbed()
+
+    .setTitle(`Résolu  !`)
+    .setDescription(`Bravo d'y être parvenu`)
+    .addField(`JsXHYwcG`, `:regional_indicator_p: :regional_indicator_a: :regional_indicator_s: :regional_indicator_t: :regional_indicator_e: :regional_indicator_b: :regional_indicator_i: :regional_indicator_n: `)
+    .setFooter(`A toi de voir !`)
   })
 }
 
