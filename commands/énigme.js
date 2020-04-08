@@ -7,7 +7,7 @@ msg.delete();
  .setColor('0x1A10F5')
  .setDescription(`Énigme à résoudre`)
  .setTitle(`Énigme résolu !`)
- .addField(`Le mot que m'avait dit mon créateur a été trouvé par <@598197511882276894>`, `Félicitation à elle !`)
+ .addField(`Le mot que m'avait dit mon créateur a été trouvé par ${<@598197511882276894>}`, `Félicitation à elle !`)
  .addField(`Le mot été **Update** `, `Update de qui , Update de quoi ?`)
  .addField(`C'est ce que vous aller devoir tenter de savoir !`, `Comme le nom l'indique c'est une énigme, creusez vous la tête !`)
  .addField(`Cette énigme comportera plusieurs problème`, `Du facile au plus difficile`)
