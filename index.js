@@ -91,7 +91,7 @@ if(msg.content.startsWith('Rien et toi') && msg.mentions.users.first() == bot.us
 
 // Update d'évenement ///////////////////////////////////////////////////////////////////////////////////////////
 
-if(msg.content === ('*Update')) || (msg.content === ('*update')) {
+if((msg.content === ('*Update')) || (msg.content === ('*update'))) {
   msg.author.createDM().then(channel => {
     let dEmbed = new Discord.MessageEmbed()
     .setTitle('Première énigme')
