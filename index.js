@@ -108,14 +108,14 @@ if((msg.content === ('*Pastebin')) || (msg.content === ('*pastebin'))) {
   msg.delete()
   msg.author.createDM().then(channel =>{
     channel.send('JsXHYwcG')
-    msg.react('🇵')
-    msg.react('🇦')
-    msg.react('🇸')
-    msg.react('🇹')
-    msg.react('🇪')
-    msg.react('🇧')
-    msg.react('🇮')
-    msg.react('🇳')
+      msg.react('🇵')
+      msg.react('🇦')
+      msg.react('🇸')
+      msg.react('🇹')
+      msg.react('🇪')
+      msg.react('🇧')
+      msg.react('🇮')
+      msg.react('🇳')
   })
 }
 
