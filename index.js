@@ -48,7 +48,6 @@ bot.on('message', async (msg) => {
 
   }
 }
-// //////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -60,7 +59,7 @@ bot.on('message', async (msg) => {
 
 
 
-// bonjour //////////////////////////////////////////////////////////////////////////////////////////
+// Bonjour //////////////////////////////////////////////////////////////////////////////////////////
 
 if((msg.content.startsWith('Bonjour') && msg.mentions.users.first() == bot.user) || (msg.content.startsWith('bonjour') && msg.mentions.users.first() == bot.user)) {
   const awnser = [`Bonjour ${msg.author}`, "Bonjour", "Bonjour , tu fait quoi ?", "Bonjour comment tu-vas ?"];
@@ -91,6 +90,7 @@ if(msg.content.startsWith('Rien et toi') && msg.mentions.users.first() == bot.us
 //};
 
 });
+
 
 
 
