@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const prefix = "*"
 module.exports.run = async (bot, msg, args) => {
 
 
@@ -10,9 +11,10 @@ if(!msg.member.hasPermission('MANAGE_MESSAGES')) return msg.reply(`Petit malin t
   .setThumbnail(msg.author.avatarURL())
   .setTitle(`**Pannel de modération**`)
   .setDescription('Commandes de modération')
-  .addField(`*clear`, `Permet de nettoyer le chat`)
-  .addField(`*kick`, `Permet de kick une personne`)
-  .addField(`*ban`, 'Permet de ban une personne')
+  .addField(`**${prefix}clear**`, `*Permet de nettoyer le chat*`)
+  .addField(`**${prefix}kick**`, `*Permet de kick une personne*`)
+  .addField(`**${prefix}ban**`, '*Permet de ban une personne*')
+  .addField(`**${prefix}FuturUpdate ?`, `*Potentiellement une deuxième énigme*`)
   .setFooter(`Replying to ${msg.author.username}`)
   .setTimestamp();
   msg.channel.send(mEmbed);
