@@ -7,7 +7,7 @@ const commands = require('./commands.js');
 bot.on('ready', async () => {
   console.log(" ");
   console.log("Le bot est lancé !");
-  bot.user.setActivity("Je suis le nouveau !")
+  bot.user.setActivity(`${prefix}help | Version 1.0`)
 });
 
 bot.on('message', async (msg) => {
