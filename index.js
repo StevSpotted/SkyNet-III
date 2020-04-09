@@ -91,32 +91,6 @@ if(msg.content.startsWith('Rien et toi') && msg.mentions.users.first() == bot.us
 
 // Update d'évenement ///////////////////////////////////////////////////////////////////////////////////////////
 
-if((msg.content === ('*Update')) || (msg.content === ('*update'))) {
-  msg.delete()
-  msg.author.createDM().then(channel => {
-    let dEmbed = new Discord.MessageEmbed()
-    .setTitle('Première énigme')
-    .setDescription(`Bien joué à toi tu as trouvé`)
-    .addField(`Pour la deuxième énigme, il m'a dit **[16], [1], [19], [20], [5], [2], [9], [14]**`, `A toi de voir si tu veuta annoncer ta trouvaille aux autres ou pas`)
-    .setFooter(`Je te recontacterai si besoin j'ai`)
-    channel.send(dEmbed)
-  })
-
-}
-
-if((msg.content === ('*Pastebin')) || (msg.content === ('*pastebin'))) {
-  msg.delete()
-  msg.author.createDM().then(channel =>{
-let pEmbed = new Discord.MessageEmbed()
-
-    .setTitle(`Résolu  !`)
-    .setDescription(`Bravo d'y être parvenu`)
-    .addField(`JsXHYwcG`, `:regional_indicator_p: :regional_indicator_a: :regional_indicator_s: :regional_indicator_t: :regional_indicator_e: :regional_indicator_b: :regional_indicator_i: :regional_indicator_n: `)
-    .setFooter(`A toi de voir !`)
-    channel.send(pEmbed)
-  })
-}
-
 
 
 });
