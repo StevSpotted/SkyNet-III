@@ -42,9 +42,9 @@ bot.on('message', async (msg) => {
               .setTimestamp()
               msg.channel.send(gEmbed);
 
-              bot.guilds.forEach(guild => {
-                guild.channels.cache.find(channel => channel.name === 'global-chat').send(gEmbed);
-              });
+              for(const prop in bot.guilds){
+  bot.guilds[prop].channels.cache.find(channel => channel.name === 'global-chat').send(gEmbed);
+}
 
 
   }
