@@ -45,7 +45,7 @@ bot.on('message', async (msg) => {
               bot.guilds.forEach(guild => {
                 guild.channels.cache.find(channel => channel.name === 'global-chat').send(gEmbed);
               });
-    }
+
 
   }
 }
