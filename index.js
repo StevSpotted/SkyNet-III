@@ -40,7 +40,7 @@ bot.on('message', async (msg) => {
               .addField(`${sayMessage}`, "Global Chat V.1")
               .setFooter(`Envoyé depuis ${msg.guild.name}`)
               .setTimestamp()
-      
+              msg.channel.send(gEmbed);
 
   const TestChan = bot.channels.cache.find(channel => channel.name === 'global-chat');
   if(TestChan){
