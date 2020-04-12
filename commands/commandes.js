@@ -5,7 +5,7 @@ module.exports.run = async (bot, msg, args) => {
 
 let user;
 
-  let cEmbed = new Discord.MessageEmbed()
+  let cEmbed = new Discord.RichEmbed()
   .setColor('5DF510')
   .setThumbnail(msg.author.avatarURL())
   .setTitle(`**Voici les commandes**`)
