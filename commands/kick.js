@@ -14,7 +14,7 @@ module.exports.run = async (bot, msg, args) => {
     if(!member) return msg.channel.send("Le membre est invalide.");
     member.kick();
 
-    let hEmbed = new Discord.MessageEmbed()
+    let hEmbed = new Discord.RichEmbed()
     .setColor("#00e68a")
     .setTitle("Rapport de kick")
     .setDescription(`Un kick a été effectué par ${msg.author}`)
