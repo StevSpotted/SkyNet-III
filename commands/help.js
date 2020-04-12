@@ -6,7 +6,7 @@ module.exports.run = async (bot, msg, args) => {
 let user;
 
 
-  let hEmbed = new Discord.MessageEmbed()
+  let hEmbed = new Discord.RichEmbed()
   .setColor('5DF510')
   .setThumbnail(msg.author.avatarURL())
   .setTitle(`Pannel d'aide`)
