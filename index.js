@@ -41,9 +41,9 @@ bot.on('message', async (msg) => {
               .setFooter(`Envoyé depuis ${msg.guild.name}`)
               .setTimestamp()
 
-              const TestChan = bot.channels.cache.find(channel => channel.name === 'global-chat');
+              const TestChan = bot.guild.channels.cache.find(channel => channel.name === 'global-chat');
   if(TestChan){
-    TestChan.map(channel => channel.send(gEmbed));
+    TestChan.send(gEmbed);
   }
 
 
