@@ -6,7 +6,7 @@ module.exports.run = async (bot, msg, args) => {
   let userToCheck = msg.mentions.users.first();
   if(!userToCheck) userToCheck = msg.author;
 
-  let uEmbed = new Discord.MessageEmbed()
+  let uEmbed = new Discord.RichEmbed()
   //.setAuthor(`UserInfo`, `${bot.user.displayAvatarURL}`)
   .setColor('0x10F5DD')
   .setTimestamp()
