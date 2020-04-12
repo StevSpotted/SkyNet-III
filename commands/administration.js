@@ -6,7 +6,7 @@ module.exports.run = async (bot, msg, args) => {
 let user;
 if(!msg.member.hasPermission('MANAGE_SERVER')) return msg.reply(`Petit malin tu n'a pas les permission`)
 
-  let aEmbed = new Discord.MessageEmbed()
+  let aEmbed = new Discord.RichEmbed()
   .setColor('5DF510')
   .setThumbnail(msg.author.avatarURL())
   .setTitle(`**Pannel d'administration**`)
