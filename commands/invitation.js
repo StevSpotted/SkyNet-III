@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 
 module.exports.run = async (bot, msg, args) => {
   msg.author.createDM().then(channel =>{
-let iEmbed = new Discord.MessageEmbed()
+let iEmbed = new Discord.RichEmbed()
 
     .setTitle(`Invites moi !`)
     .setDescription(`Voici mon lien !`)
